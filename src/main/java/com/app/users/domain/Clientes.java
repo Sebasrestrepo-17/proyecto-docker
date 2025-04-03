@@ -1,34 +1,34 @@
-package com.app.users.domain;
+package com.app.clientes.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "users")
+@Table(name = "clientes")
 @Data
-public class User {
+public class Clientes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String name;
+    private String nombre;
 
     @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = false)
-    private String password;
+    private String telefono;
 
     // Empty constructor (required for JPA)
-    public User() {}
+    public Clientes() {}
 
     // Constructor with parameters
-    public User(Long id, String name, String email, String password) {
+    public Clientes(Long id, String nombre, String email, String telefono) {
         this.id = id;
-        this.name = name;
+        this.nombre = nombre;
         this.email = email;
-        this.password = password;
+        this.telefono = telefono;
     }
 
     // Getters y Setters
@@ -40,12 +40,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getEmail() {
@@ -56,11 +56,11 @@ public class User {
         this.email = email;
     }
 
-    public String getPassword() {
-        return this.password;
+    public String getTelefono() {
+        return this.telefono;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 }

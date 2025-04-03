@@ -5,15 +5,15 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Component;
 
-import com.app.users.domain.IClientesRepository;
+import com.app.users.domain.IUserRepository;
 import com.app.users.domain.User;
 
 @Component
 public class UserDatasource {
 
-    private final IClientesRepository userRepository;
+    private final IUserRepository userRepository;
 
-    public UserDatasource(IClientesRepository userRepository) {
+    public UserDatasource(IUserRepository userRepository) {
         this.userRepository = userRepository;
     }
 

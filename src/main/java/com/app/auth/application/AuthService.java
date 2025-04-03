@@ -17,7 +17,7 @@ import com.app.auth.infrastructure.JwtUtils;
 import com.app.auth.infrastructure.dto.AuthResponse;
 import com.app.auth.infrastructure.dto.ProfileResponse;
 import com.app.auth.infrastructure.dto.RegisterRequest;
-import com.app.users.domain.IUserRepository;
+import com.app.users.domain.IClientesRepository;
 import com.app.users.domain.User;
 
 import lombok.RequiredArgsConstructor;
@@ -28,7 +28,7 @@ import lombok.RequiredArgsConstructor;
 public class AuthService {
     private final AuthenticationManager authenticationManager;
     private final JwtUtils jwtUtils;
-    private final IUserRepository userRepository;
+    private final IClientesRepository userRepository;
     private final IJwtTokenRepository tokenRepository;
     private final PasswordEncoder passwordEncoder;
 

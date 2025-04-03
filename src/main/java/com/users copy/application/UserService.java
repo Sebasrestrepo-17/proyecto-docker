@@ -7,16 +7,16 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.app.shared.adapters.exception.ResourceNotFoundException;
 
-import com.app.users.domain.IClientesRepository;
+import com.app.users.domain.IUserRepository;
 import com.app.users.domain.IUserService;
 import com.app.users.domain.User;
 
 @Service
 public class UserService implements IUserService {
 
-    private final IClientesRepository userRepository;
+    private final IUserRepository userRepository;
 
-    public UserService(IClientesRepository userRepository) {
+    public UserService(IUserRepository userRepository) {
         this.userRepository = userRepository;
     }
 

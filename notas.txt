@@ -1,0 +1,11 @@
+Para crear las tablas ingresar a: 
+
+main > java\com\app > users
+
+
+y copiar dicha carpeta las veces de tablas que necesitas
+
+
+Cambiar de nombre y renombrar en el codigo algunas cosas de:
+IUserService --> nombre de la tabla donde iria el "User" sin borrar la "I" que se interpreta para denominar que es una interfaz
+IUserRepository --> nombre de la tabla donde iria el "User" sin borrar la "I" que se interpreta para denominar que es una interfaz

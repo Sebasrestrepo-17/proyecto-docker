@@ -1,4 +1,4 @@
-package com.app.clientes.domain;
+package com.app.users.domain;
 
 import java.util.List;
 
